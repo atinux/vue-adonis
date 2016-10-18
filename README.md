@@ -9,7 +9,7 @@
 1. Vue.js 2.0 with server-side rendering (+ cacheable components)
 2. Hot reloading (via webpack)
 3. Configurable via config/vue.js
-4. vuex and vue-router are installed and ready to use (synced with vue-router-sync)!
+4. vuex and vue-router are installed and ready to use (synced with vue-router-sync)
 5. All the awesome features of AdonisJS
 
 ## Installation
