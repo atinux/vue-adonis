@@ -17,7 +17,7 @@
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
 
 ```bash
-vue init atinux/adonis-vue <project-name>
+vue init atinux/vue-adonis <project-name>
 cd <project-name> # move to your project
 mv .env.example .env # Add environment variables for Adonis
 npm install # or yarn install
