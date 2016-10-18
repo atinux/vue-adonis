@@ -1,0 +1,3 @@
+public/dist
+!.atom-build.js
+!.eslintrc.js

@@ -1,0 +1,20 @@
+{{{{raw}}}}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>vue-hackernews-2.0</title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+    {# <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'> #}
+    {% if isProd %}<link rel="stylesheet" href="{{ files.css }}">{% endif %}
+  </head>
+  <body>
+    {% if context.initialState %}
+    <script type="text/javascript">window.__INITIAL_STATE__={{ serialize(context.initialState, { isJSON: true }) | safe }}</script>
+    {% endif %}
+    {{ APP | safe }}
+    <script src="{{ files.clientVendor }}"></script>
+    <script src="{{ files.client }}"></script>
+  </body>
+</html>
+{{{{/raw}}}}
