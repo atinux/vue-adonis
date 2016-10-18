@@ -1,4 +1,4 @@
-<p align="center"><img height="150" width="390" src="https://raw.githubusercontent.com/atinux/vue-adonis/master/template/resources/src/assets/img/logo.png"></p>
+<p align="center"><img width="390" src="https://raw.githubusercontent.com/atinux/vue-adonis/master/template/resources/src/assets/img/logo.png"></p>
 
 # Adonis-Vue
 
