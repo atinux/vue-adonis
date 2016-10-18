@@ -1,4 +1,4 @@
-<p align="center"><img width="100"src="https://raw.githubusercontent.com/atinux/vue-adonis/master/template/resources/src/assets/img/logo.png"></p>
+<p align="center"><img height="150" src="https://raw.githubusercontent.com/atinux/vue-adonis/master/template/resources/src/assets/img/logo.png"></p>
 
 # Adonis-Vue
 
@@ -23,10 +23,7 @@ mv .env.example .env # Add environment variables for Adonis
 npm install # or yarn install
 ```
 
-## USAGE
-
-**WARNING**: this setup is working for node >= 6.0.0
-if you want to make it work for lower versions of node, please add the `--harmony_proxies` flag in package.json (scripts.dev, scripts.start) and also in ./ace (#!/usr/bin/env node --harmony_proxies)
+## Usage
 
 ### Development
 
