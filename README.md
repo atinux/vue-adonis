@@ -31,7 +31,7 @@ npm install # or yarn install
 npm run dev
 ```
 
-Go to http://localhost:8080
+Go to [http://localhost:8080](http://localhost:8080)
 
 ### Production
 
