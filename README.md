@@ -35,9 +35,15 @@ Go to [http://localhost:8080](http://localhost:8080)
 
 ### Production
 
+Set the env variables in your provider and add `ENV_SILENT=true` so Adonis will not try to load the .env file (see [docs](http://adonisjs.com/docs/3.1/env)).
 ```
-NODE_ENV=production npm start
+npm start
 ```
+
+### Heroku
+
+Add `NPM_CONFIG_PRODUCTION=false` in your env variables so it will install the dev dependencies to build the sources (see [Heroku docs](https://devcenter.heroku.com/articles/nodejs-support#devdependencies)).
+
 
 ## Documentation
 
