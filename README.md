@@ -44,6 +44,9 @@ npm start
 
 Add `NPM_CONFIG_PRODUCTION=false` in your env variables so it will install the dev dependencies to build the sources (see [Heroku docs](https://devcenter.heroku.com/articles/nodejs-support#devdependencies)).
 
+## Including Bootstrap
+
+You can use external libraries like bootstrap, please see [Issue #1](https://github.com/Atinux/vue-adonis/issues/1#issuecomment-255539896)
 
 ## Documentation
 
