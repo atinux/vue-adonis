@@ -8,7 +8,9 @@ const path = require('path')
 const serialize = require('serialize-javascript')
 const promisify = require('es6-promisify')
 const createBundleRenderer = require('vue-server-renderer').createBundleRenderer
+const ansiHTML = require('ansi-html')
 const vueConfig = Config.get('vue')
+const encodeHtml = (str) => str.replace(/</g, '&lt;').replace(/>/g, '&gt;')
 
 class AppController {
 
@@ -62,7 +64,7 @@ class AppController {
       })
     } catch (err) {
       // throw err
-      yield response.status(500).sendView('errors/vue', { err })
+      yield response.status(500).sendView('errors/vue', { err, ansiHTML, encodeHtml })
     }
   }
 
@@ -134,6 +136,18 @@ class AppController {
   }
 
 }
+
+// Config for ansi-html
+ansiHTML.setColors({
+  reset: ['efefef', 'a6004c'],
+  darkgrey: '5a012b',
+  yellow: 'ffab07',
+  green: 'aeefba',
+  magenta: 'ff84bf',
+  blue: '3505a0',
+  cyan: '56eaec',
+  red: '4e053a'
+})
 
 // Exports the instance so the constructor is called only once
 module.exports = new AppController()

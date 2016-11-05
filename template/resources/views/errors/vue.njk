@@ -1,4 +1,4 @@
-{{{{raw}}}}
-<h3>Vue.js error</h3>
-<pre>{{ err.stack.replace(r/\[\d+m/gi, '') }}</pre>
-{{{{/raw}}}}
+<body style="background-color: #a6004c;color: #efe;font-family: monospace;">
+  <h2>Vue.js error</h2>
+  <pre>{{ ansiHTML(encodeHtml(err.stack)) | safe }}</pre>
+</body>
