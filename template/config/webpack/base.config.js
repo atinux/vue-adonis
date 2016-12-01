@@ -3,6 +3,7 @@ const resolve = file => path.resolve(__dirname, file)
 const CleanWebpackPlugin = require('clean-webpack-plugin')
 const vueLoaderConfig = require('./vue-loader.config')
 const outputDir = require('../vue').outputDir
+const urlJoin = function () { return [].slice.call(arguments).join('/').replace(/\/+/g, '/') }
 
 /*
 |--------------------------------------------------------------------------
@@ -20,7 +21,7 @@ module.exports = {
   },
   output: {
     path: resolve('../../public/' + outputDir),
-    publicPath: path.join('/', outputDir, '/')
+    publicPath: urlJoin('/', outputDir, '/')
   },
   module: {
     rules: [

@@ -1,8 +1,5 @@
 module.exports = {
   helpers: {
-    harmony_proxies: () => {
-      return (Number(process.version.slice(1, 4)) < 6.5 ? ' --harmony_proxies' : '')
-    },
     raw: function(options) {
       return options.fn(this)
     }

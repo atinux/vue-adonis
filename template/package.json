@@ -5,8 +5,8 @@
   "author": "{{ author }}",
   "private": true,
   "scripts": {
-    "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env -x 'node{{ harmony_proxies }}' server.js",
-    "start": "npm run build && node{{ harmony_proxies }} server.js",
+    "dev": "nodemon --watch app --watch bootstrap --watch config --watch .env server.js",
+    "start": "npm run build && node server.js",
     "build": "npm run build:client && npm run build:server",
     "build:client": "webpack --config config/webpack/client.config.js --progress --hide-modules",
     "build:server": "webpack --config config/webpack/server.config.js --progress --hide-modules",
