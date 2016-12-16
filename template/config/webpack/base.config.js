@@ -23,6 +23,9 @@ module.exports = {
     path: resolve('../../public/' + outputDir),
     publicPath: urlJoin('/', outputDir, '/')
   },
+  performance: {
+    hints: (process.env.NODE_ENV === 'production' ? 'warning' : false)
+  },
   module: {
     rules: [
       {
