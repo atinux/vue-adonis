@@ -12,6 +12,8 @@
 4. vuex and vue-router are installed and ready to use (synced with vue-router-sync)
 5. All the awesome features of AdonisJS
 
+**I now recommend to use [adonuxt](https://github.com/nuxt/adonuxt), it has all these features + code splitting, custom layouts, middlewares and it's easier to start with.**
+
 ## Installation
 
 This is a project template for [vue-cli](https://github.com/vuejs/vue-cli).
